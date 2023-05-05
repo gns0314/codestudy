@@ -7,3 +7,8 @@ def solution(my_string, m, c):
         temp.append(my_string[a:b])
         answer += temp[i][c-1]
     return answer
+
+# 파이써닉하게 풀자!
+
+def solution(s, m, c):
+    return s[c-1::m]
