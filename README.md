@@ -44,3 +44,4 @@ def solution(n):
         answer.append(n)
     return answer
 ```
+## index() 메소드는 대소문자를 구별하기 때문에, "Kim"이든 "kim"이든 "KIM"이든 "kIm"이든 상관없이 해당 문자열을 찾아줍니다.
