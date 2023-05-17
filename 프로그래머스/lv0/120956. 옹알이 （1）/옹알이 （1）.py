@@ -1,7 +1,7 @@
 def solution(babbling):
     answer = 0
     b = ''
-    dic = ["aya", "woo", "ye", "ma"]
+    dic = ["aya", "ye", "woo", "ma"]
     for i in babbling :
         b = i
         for j in dic :
