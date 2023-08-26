@@ -1,7 +1,10 @@
 function solution(arr, delete_list) {
-    const deleteSet = new Set(delete_list);
-
-    const result = arr.filter(element => !deleteSet.has(element));
+    var answer = []
+    for(i of arr){ 
+        if(delete_list.includes(i) == false){
+        answer.push(i)}
+    } 
+    return answer
     
-    return result;
 }
+
