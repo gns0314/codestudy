@@ -8,10 +8,7 @@ function solution(arr, flag) {
                 cnt += 1;
             }
         }else{
-            while(cnt < arr[i]){
-                answer.pop()
-                cnt += 1;
-            }
+            answer = answer.slice(0,(answer.length)-arr[i])
         }
     }
     return answer;
