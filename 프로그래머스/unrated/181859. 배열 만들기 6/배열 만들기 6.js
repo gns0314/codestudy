@@ -11,8 +11,5 @@ function solution(arr) {
         }
         i++;
     }
-    if (answer.length === 0){
-        return answer = [-1]
-    }
-    return answer;
+    return answer.length ? answer : [-1];
 }
