@@ -1,9 +1,3 @@
 function solution(intStrs, k, s, l) {
-    var answer = [];
-    for(i of intStrs){
-        if(+(i.slice(s,s+l)) > k){
-            answer.push(+(i.slice(s,s+l)))
-        }
-    }
-    return answer;
+    return intStrs.map((v) => +v.slice(s, s + l)).filter((v) => v > k);
 }
