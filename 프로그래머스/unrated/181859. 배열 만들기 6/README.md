@@ -1,10 +1,10 @@
 # [unrated] 배열 만들기 6 - 181859 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181859) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181859?language=javascript) 
 
 ### 성능 요약
 
-메모리: 10.9 MB, 시간: 24.95 ms
+메모리: 39.3 MB, 시간: 42.24 ms
 
 ### 구분
 
