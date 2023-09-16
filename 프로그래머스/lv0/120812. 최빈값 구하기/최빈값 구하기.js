@@ -1,5 +1,6 @@
 function solution(array) {
     var answer = 0;
+    let maxcount = 0;
     let count = {};
     // 딕셔너리에 해당 숫자가 몇개있는지 값을 추가  
     for (let i = 0; i < array.length; i++) {
@@ -11,16 +12,16 @@ function solution(array) {
         }
     }
     
-    let maxcount = 0;
-    for (const num in count) {
-        if (count[num] > maxcount) {
-          maxcount = count[num];
-          answer = num;
-        } else if (count[num] === maxcount) {
+    // 최빈값 구하기
+    for (let j in count) {
+        if (count[j] > maxcount) {
+          maxcount = count[j];
+          answer = parseInt(j);
+        } else if (count[j] === maxcount) {
           answer = -1;
         }
   }
         
-  return +answer;
+  return answer;
   }
     
