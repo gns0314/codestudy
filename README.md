@@ -45,3 +45,21 @@ def solution(n):
     return answer
 ```
 ## index() 메소드는 대소문자를 구별하기 때문에, "Kim"이든 "kim"이든 "KIM"이든 "kIm"이든 상관없이 해당 문자열을 찾아줍니다.
+
+# 투포인터 알고리즘 
+```
+def solution(n):
+    answer = 0
+    left, right, cnt = 0,0,0
+
+    while left < n:
+        if cnt < n:
+            right += 1
+            cnt += right
+        else:
+            if n == cnt: answer += 1
+            left += 1
+            cnt -= left
+
+    return answer
+```
